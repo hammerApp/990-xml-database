@@ -1,4 +1,6 @@
-from irsx._version import __version__ as irsx_version
+import sys
+sys.path.append('../../990-xml-reader')
+from irs_reader._version import __version__ as irsx_version
 from datetime import datetime
 from django.shortcuts import get_object_or_404, render
 from django.conf import settings

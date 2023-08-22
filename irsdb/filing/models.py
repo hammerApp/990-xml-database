@@ -3,7 +3,9 @@ from django.conf import settings
 import os
 import re
 
-from irsx import settings as irsx_settings
+import sys
+sys.path.append('../../990-xml-reader')
+from irs_reader import settings as irsx_settings
 XML_DIR = irsx_settings.WORKING_DIRECTORY
 
 VERSION_RE=re.compile(r'returnVersion="(20\d\dv\d\.\d)"')

@@ -2,7 +2,7 @@
 Django>=2.0.1
 
 # for postgres:
-psycopg2
+psycopg2-binary
 
 # for mysql 
 # mysqlclient

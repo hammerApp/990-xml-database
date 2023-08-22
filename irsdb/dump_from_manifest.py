@@ -1,8 +1,10 @@
 
 import unicodecsv as csv
-from irsx.xmlrunner import XMLRunner
+import sys
+sys.path.append('../../990-xml-reader')
+from irs_reader.xmlrunner import XMLRunner
 
-from irsx.filing import FileMissingException
+from irs_reader.filing import FileMissingException
 from stream_extractor import StreamExtractor
 
 

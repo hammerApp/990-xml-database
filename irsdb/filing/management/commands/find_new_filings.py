@@ -5,8 +5,10 @@ import requests
 from django.core.management.base import BaseCommand
 from filing.models import Filing
 from django.conf import settings
-from irsx.settings import WORKING_DIRECTORY
-from irsx.file_utils import stream_download
+import sys
+sys.path.append('../../../../990-xml-reader')
+from irs_reader.settings import WORKING_DIRECTORY
+from irs_reader.file_utils import stream_download
 
 from os.path import isfile, join
 

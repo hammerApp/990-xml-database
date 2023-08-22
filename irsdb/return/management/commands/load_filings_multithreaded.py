@@ -9,9 +9,11 @@ from django.conf import settings
 
 from filing.models import Filing
 from schemas.model_accumulator import Accumulator
-from irsx.settings import INDEX_DIRECTORY
-from irsx.file_utils import stream_download
-from irsx.xmlrunner import XMLRunner
+import sys
+sys.path.append('../../../../990-xml-reader')
+from irs_reader.settings import INDEX_DIRECTORY
+from irs_reader.file_utils import stream_download
+from irs_reader.xmlrunner import XMLRunner
 
 from queue import Queue
 from threading import Thread

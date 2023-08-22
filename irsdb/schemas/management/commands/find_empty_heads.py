@@ -5,7 +5,9 @@ from django.apps import apps
 
 from django.conf import settings
 
-from irsx.settings import METADATA_DIRECTORY
+import sys
+sys.path.append('../../../../990-xml-reader')
+from irs_reader.settings import METADATA_DIRECTORY
 
 class Command(BaseCommand):
     help = """  Find 'empty heads' with no values at all.
